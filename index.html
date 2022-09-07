@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript" src="script.js"></script>
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <div class="container" id="container1">
+    <div class="bar">
+    </div>
+
+    <div class="img1">
+      <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+      <div class="txt">
+        <p class="txt1" id="txt1">0000 0000 0000 0000</p>
+        <p class="txt2" id="txt2">Jane Appleseed</p>
+        <p class="txt3"><span id="txt3">00</span>/<span id="txt4">00</span></p>
+      </div>
+    </div>
+
+    <div class="img2">
+      <p class="txt4" id="txt5">000</p>
+    </div>
+  </div>
+
+  <div class="container1">
+    <form name="forms" action="" id="form" method="post">
+      <label for="cname"> CARDHOLDER NAME </label><br>
+      <input type="text" name="cname" id="cname" placeholder="e.g. Jane Appleseed" onchange="fnc1()" required>
+      <br>
+    
+
+      <label for="cnumber"> CARD NUMBER </label><br>
+      <input type="text" name="cnumber" id="cnumber" placeholder="e.g. 1234 5678 9123 0000" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" onchange="fnc2()" required>
+      <br>
+    
+      <div class="exp">
+        <label for="expdate">EXP. DATE (MM/YY)</label><br>
+        <input type="text" name="expdate" id="month" placeholder="MM" pattern="[0-1]{1}[0-9]{1}" onchange="fnc3()" required>
+        <input type="text" name="expdate" id="year" placeholder="YY" pattern="[0-9]{2}" onchange="fnc4()" required>
+      </div>
+
+      <div class="cvc">
+        <label for="cvc">CVC</label><br>
+        <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" pattern="[0-9]{3}" onchange="fnc5()" required>
+      </div>
+      <br>
+      <input type="submit" value="Confirm" onclick="formDisplay()">
+
+    </form>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/OsamaKhalid010">Muhammad Osama Khalid</a>.
+  </div>
+
+  <div class="container1">
+    <div class="submission" id="submission">
+      <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+      <p class="txt5">THANK YOU!</p>
+      <p class="txt6">We've added your card details</p>
+      <button type="button" value="Continue" onclick="window.location.reload();"> Continue </button>
+    </div>
+  </div>
+
+</body>
+</html>
