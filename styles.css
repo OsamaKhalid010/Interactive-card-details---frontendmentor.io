@@ -208,7 +208,10 @@ form > input[type=submit]:hover {
         top: 19.35%;
         left: 4%;
         z-index: 1;
-        width: 78%;
+        width: 74.5%;
+    }
+    .txt1 {
+        font-size: 20px;
     }
     .container1 {
         width: 80%;
