@@ -30,7 +30,7 @@ body {
 .img1 {
     background: url(bg-card-front.png) no-repeat;
     background-size: cover;
-    height: 210px;
+    height: 28%;
     width: 24.5%;    
     position: absolute;
     top: 17%;
@@ -68,7 +68,7 @@ body {
 .img2 {
     background: url(bg-card-back.png) no-repeat;
     background-size: cover;
-    height: 210px;
+    height: 28%;
     width: 24.5%;    
     position: absolute;
     top: 51%;
@@ -104,6 +104,7 @@ form {
 .exp, .cvc {
     display: inline-block;
     width: 49.3%;
+    height: auto;
 }
 
 
@@ -182,6 +183,17 @@ form > input[type=submit]:hover {
 .submission > button:hover {
     opacity: 0.85;
 }
+form > p {
+    margin-top: -15px;
+    margin-bottom: auto;
+}
+input[type=text]:focus {
+    outline: 0;
+}
+
+#numErr, #nameErr, #expErr {
+    color: red;
+}
 
 @media (max-width: 662px) {
     body {
@@ -201,6 +213,7 @@ form > input[type=submit]:hover {
         top: 3%;
         left: 22%;
         z-index: 0;
+        height: 28%;
         width: 74.5%;
     }
     .img1 {
@@ -208,10 +221,14 @@ form > input[type=submit]:hover {
         top: 19.35%;
         left: 4%;
         z-index: 1;
+        height: 28%;
         width: 74.5%;
+        box-shadow: 0 0 0;
     }
     .txt1 {
         font-size: 20px;
+        word-spacing: 4px;
+        letter-spacing: 4px;
     }
     .container1 {
         width: 80%;
@@ -234,6 +251,7 @@ form > input[type=submit]:hover {
     }
     
 }
+
 @media (max-width: 992px) {
     .container1 {
         width: 80%;
