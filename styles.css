@@ -197,7 +197,7 @@ input[type=text]:focus {
 
 @media (max-width: 662px) {
     body {
-        overflow: none;
+        overflow: scroll;
     }
     .bar {
         width: 100%;
@@ -239,7 +239,7 @@ input[type=text]:focus {
         top: 72%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 80%;
+        width: 82%;
         display: block;
     }
     .submission {
@@ -247,7 +247,7 @@ input[type=text]:focus {
         top: 72%;
         left: 51%;
         transform: translate(-50%, -50%);
-        width: 80%;
+        width: 82%;
     }
     
 }
